@@ -1,15 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <h1>Prueba Tecnica - FrontEnd</h1>
+  <MenuPrincipal />
+  <HomeSection />
+  <AddSection  />
+  <ListSection />
+  <UpdateSection />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuPrincipal from './components/MenuPrincipal.vue'
+import HomeSection from './components/HomeSection.vue'
+import AddSection from './components/AddSection.vue'
+import ListSection from './components/ListSection.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuPrincipal,
+    HomeSection,
+    AddSection,
+    ListSection,
+    
+  },
+  methods: {
+    ForcesUpdateComponent() {
+      // your code
+      this.$forceUpdate();
+      // your code
+    }
+  },
+  data (){
+  return { 
+      
+    }
   }
 }
 </script>
